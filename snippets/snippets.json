@@ -1,0 +1,12 @@
+{
+	"ex": {
+		"prefix": "ex",
+		"body": "exten => s,n,",
+		"description": "exten"
+	},
+	"inc": {
+		"prefix": "inc",
+		"body": "include => ",
+		"description": "include"
+	}
+}

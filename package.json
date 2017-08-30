@@ -1,0 +1,56 @@
+{
+    "name": "asterisk",
+    "displayName": "vscode-asterisk",
+    "description": "Asterisk config and AEL2 syntax support and code snippets",
+    "version": "0.1.0",
+    "publisher": "asux",
+    "author": {
+        "name": "Alex Ulianytskyi",
+        "email": "a.ulyanitsky@gmail.com"
+	},
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+	"license": "MIT",
+	"icon": "images/asterisk.png",
+    "categories": [
+        "Languages",
+        "Snippets"
+    ],
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/asux/vscode-asterisk.git"
+	},
+	"bugs": {
+		"url": "https://github.com/asux/vscode-asterisk/issues"
+	},
+    "contributes": {
+        "languages": [{
+            "id": "asterisk",
+            "aliases": ["Asterisk config", "asterisk"],
+            "extensions": [".conf"],
+            "configuration": "./language-configuration-asterisk.json"
+        }, {
+            "id": "ael",
+            "aliases": ["AEL2", "ael"],
+            "extensions": [".ael"],
+            "configuration": "./language-configuration-ael.json"
+        }],
+        "grammars": [{
+            "language": "asterisk",
+            "scopeName": "source.asterisk.config",
+            "path": "./syntaxes/Asterisk config.tmLanguage"
+        }, {
+            "language": "ael",
+            "scopeName": "source.ael",
+            "path": "./syntaxes/AEL2.tmLanguage"
+        }],
+        "snippets": [
+            {
+                "language": "asterisk",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
